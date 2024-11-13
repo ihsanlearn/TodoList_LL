@@ -31,7 +31,13 @@ export default function Authenticated({
                                     href={route('dashboard')}
                                     active={route().current('dashboard')}
                                 >
-                                    Dashboard
+                                    Home
+                                </NavLink>
+                                <NavLink
+                                    href={route('todo-list')}
+                                    active={route().current('todo-list')}
+                                >
+                                    Todo List
                                 </NavLink>
                             </div>
                         </div>
@@ -173,7 +179,7 @@ export default function Authenticated({
                 </header>
             )}
 
-            <main>{children}</main>
+            <main >{children}</main>
         </div>
     );
 }
